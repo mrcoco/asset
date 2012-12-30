@@ -1,0 +1,59 @@
+<div class="wide form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'action'=>Yii::app()->createUrl($this->route),
+	'method'=>'get',
+)); ?>
+
+	<div class="row">
+		<?php echo $form->label($model,'id'); ?>
+		<?php echo $form->textField($model,'id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'code_item_movable'); ?>
+		<?php echo $form->textField($model,'code_item_movable',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'name_item_movable'); ?>
+		<?php echo $form->textField($model,'name_item_movable',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'price_book_movable'); ?>
+		<?php echo $form->textField($model,'price_book_movable'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'purchase_price_movable'); ?>
+		<?php echo $form->textField($model,'purchase_price_movable'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'volume_movable'); ?>
+		<?php echo $form->textField($model,'volume_movable'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'unit_movable'); ?>
+		<?php echo $form->textField($model,'unit_movable',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'life_movable'); ?>
+		<?php echo $form->textField($model,'life_movable'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'responsibility_movable'); ?>
+		<?php echo $form->textField($model,'responsibility_movable',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton('Search'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+
+</div><!-- search-form -->
