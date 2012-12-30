@@ -107,6 +107,10 @@ $this->widget('ext.calendar.EFullCalendar', array(
 //        'eventDrop' => 'js:function(event, eventElement){ alert("eventDrop"); }',
 //        'select' => 'js:function(start, end, allDay){ alert("select"); }',
     ),
+    'htmlOptions' => array(
+        'class' => 'cal_theme',
+        'style' => 'width:100%;margin: 0 auto;'
+    ),
 ));
 ?>
 <?php
